@@ -18,6 +18,10 @@ typedef enum : NSUInteger {
 } TZAssetModelMediaType;
 
 @class PHAsset;
+
+/**
+ 装有一个图片/视频/音频资源的模型，对应一个图片/视频Cell「TZAssetCell」，资源属性名为asset，可以从TZImageManager取出资源对象「图片/视频/音频」。
+ */
 @interface TZAssetModel : NSObject
 
 @property (nonatomic, strong) id asset;             ///< PHAsset or ALAsset
@@ -34,6 +38,10 @@ typedef enum : NSUInteger {
 
 
 @class PHFetchResult;
+
+/**
+ 装有一个相册资源的模型，对应一个相册Cell「TZAlbumCell」，资源属性名为result，可以从TZImageManager取出所含有的图片资源数组。
+ */
 @interface TZAlbumModel : NSObject
 
 @property (nonatomic, strong) NSString *name;        ///< The album name

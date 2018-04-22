@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @class TZAssetModel;
+
+/**
+ 视频预览控制器，简单的播放/暂停/发送视频功能，用的是AVPlayer来播放。
+ */
 @interface TZVideoPlayerController : UIViewController
 
 @property (nonatomic, strong) TZAssetModel *model;

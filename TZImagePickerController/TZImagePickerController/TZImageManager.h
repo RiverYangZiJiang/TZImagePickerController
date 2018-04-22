@@ -14,6 +14,12 @@
 
 @class TZAlbumModel,TZAssetModel;
 @protocol TZImagePickerControllerDelegate;
+
+/**
+ 图片资源获取管理类
+ 
+ 唯一import了和的类，向外界提供有获取相册/照片/视频资源的接口，在里面每个方法内部会判断系统版本，从而选择是从AssetsLibrary库「iOS9以前可用」还是从Photos库里获取照片资源「iOS8以后可用」。
+ */
 @interface TZImageManager : NSObject
 
 @property (nonatomic, strong) PHCachingImageManager *cachingImageManager;

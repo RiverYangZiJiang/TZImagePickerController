@@ -15,6 +15,7 @@
 #import "TZImageCropManager.h"
 
 @interface TZPhotoPreviewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UIScrollViewDelegate> {
+    /** 用UICollectionView来的cell来展示图片，比用UIScrollView实现要简单和高效得多 */
     UICollectionView *_collectionView;
     UICollectionViewFlowLayout *_layout;
     NSArray *_photosTemp;
@@ -35,6 +36,10 @@
 }
 @property (nonatomic, assign) BOOL isHideNaviBar;
 @property (nonatomic, strong) UIView *cropBgView;
+
+/**
+ 裁剪视图
+ */
 @property (nonatomic, strong) UIView *cropView;
 
 @property (nonatomic, assign) double progress;

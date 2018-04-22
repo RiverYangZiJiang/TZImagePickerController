@@ -32,6 +32,15 @@
 #define iOS11Later ([UIDevice currentDevice].systemVersion.floatValue >= 11.0f)
 
 @protocol TZImagePickerControllerDelegate;
+
+/**
+ 【Demo的首页，设置各种参数，进入图片选择界面】导航栏控制器，通过改变该控制器的一些属性来达到你想要的效果，比如设置maxImagesCount属性来约束用户最大可选图片张数，默认为9张；设置allowPickingOriginalPhoto属性为NO不允许用户选择视频，默认是YES；设置allowPickingVideo属性为NO不允许用户选择原图，默认是YES。
+ 
+ 作者：半尺尘
+ 链接：https://www.jianshu.com/p/1975411a31bb
+ 來源：简书
+ 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+ */
 @interface TZImagePickerController : UINavigationController
 
 #pragma mark -

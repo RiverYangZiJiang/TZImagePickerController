@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @class TZAlbumModel;
+
+/**
+ 照片选择控制器，一个collectionView每行4个cell展示图片。
+ */
 @interface TZPhotoPickerController : UIViewController
 
 @property (nonatomic, assign) BOOL isFirstAppear;
